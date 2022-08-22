@@ -1,30 +1,8 @@
-﻿// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-// 2, 3, 7 -> 7
-// 44 5 78 -> 78
-// 22 3 9 -> 22
-Console.Write("Введите 3(три) числа ");
-int x=int.Parse(Console.ReadLine());
-int y=int.Parse(Console.ReadLine());
-int z=int.Parse(Console.ReadLine());
-if (x > y)
-{
-    if (x > z)
-    {
-        Console.WriteLine("{0} - наибольшее число", x);
-    }
-    else
-    {
-        Console.WriteLine("{0} - наибольшее число", z);
-    }
-}
-else
-{
-    if (y > z)
-    {
-        Console.WriteLine("{0} - наибольшее число", y);
-    }
-    else
-    {
-        Console.WriteLine("{0} - наибольшее число", z);
-    }
-}
+﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.Write("Введите число: ");
+int x = Convert.ToInt32(Console.ReadLine());
+if ((x % 2) == 0) { Console.WriteLine("Четное"); }  else Console.WriteLine("Нечетное");
